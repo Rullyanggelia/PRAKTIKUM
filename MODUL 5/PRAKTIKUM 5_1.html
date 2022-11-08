@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<title>Praktikum 5_1</title>
+   <SCRIPT language="JavaScript" >
+
+function test () {
+var val1=document.kirim.T1.value
+if(val1>=0&&40)
+   document.kirim.T2.value="E"
+if(val1>41&&55)
+   document.kirim.T2.value="D"
+if(val1>56&&60)
+   document.kirim.T2.value="C"
+if(val1>61&&65)
+   document.kirim.T2.value="BC"
+if(val1>66&&70)
+   document.kirim.T2.value="B"
+if(val1>71&&80)
+   document.kirim.T2.value="AB"
+if(val1>81&&100)
+   document.kirim.T2.value="A"
+}
+   </SCRIPT>
+<body>
+<form method="POST" name="kirim">
+<p>MASUKKAN NILAI ANGKA : <input type="text" name="T1" size="20"> <input type="button" value="KONVERSI" name="B1" onclick=test()></p>
+<P>NILAI HURUF : <input type="text" name="T2" size="20"></p>
+</form>
+</body>
+</html>

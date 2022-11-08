@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style type="text/css">
+
+   </style>
+   <title>Praktikum 5.2</title>
+</head>
+<body>
+   <body><div align="center">
+    <P>Nama   : Rully Anggelia Sukarno Putri</P>
+    <P>NIM    : 2005101059</P>
+    <P>Kelas  : TIF 5C</P>
+    <h2>KALKULATOR SEDERHANA</h2>
+      <p> Bil 1 <input type="number"  id="bil1"/></p>
+      <p> Bil 2 <input type="number"  id="bil2"/></p>
+      <button id="tambah">+</button>
+      <button id="kurang">-</button>
+      <button id="kali">*</button>
+      <button id="bagi">/</button><br/>
+      <p> Hasil <input type="number"  readonly id="hasil"/></p>
+</div>
+ <script type="text/javascript">
+         var n1 = document.getElementById("bil1");
+         var n2 = document.getElementById("bil2");
+         var hsl = document.getElementById("hasil");
+         document.getElementById("tambah").addEventListener("click", function() 
+         {
+            hsl.value = 
+            parseInt(n1.value)+parseInt(n2.value);
+         });
+         document.getElementById("kurang").addEventListener("click", function() 
+         {
+            hsl.value = 
+            parseInt(n1.value)-parseInt(n2.value);
+         });
+         document.getElementById("kali").addEventListener("click", function() 
+         {
+            hsl.value = 
+            parseInt(n1.value)*parseInt(n2.value);
+         });
+         document.getElementById("bagi").addEventListener("click", function() 
+         {
+            hsl.value = 
+            parseInt(n1.value)/parseInt(n2.value);
+         });
+         
+      </script>
+      </body>
+</body>
+</html>
